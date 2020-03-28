@@ -2,20 +2,17 @@
 import java.awt.Toolkit;
 import java.io.File;
 import java.io.InputStream;
-import java.util.Scanner;
-
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 
 public class Morse_command {
-    static	Scanner input = new Scanner(System.in);
 	static String morseEncode(char x)  
 	 {  
 	     switch (x)  
 	     { 
 	     	 case ' ':
-	     		 return "/";
+	     	     return "/";
 	         case 'a': 
 	             return ".-"; 
 	         case 'b': 
@@ -69,24 +66,23 @@ public class Morse_command {
 	         case 'z': 
 	             return "--.."; 
 	     } 
-	     return ""; 
-	 } 
+	     return "";  } 
 	
 	
 	static String Morse_Encode(String s)  
 	
-     {String t="";
+     {String t = "";
 	 	
 	     
 	     for (int i = 0;i<s.length(); i++) { 
-	    	 t=t+ morseEncode(s.charAt(i))+" "; 
+	    	 t = t+ morseEncode(s.charAt(i))+" "; 
 	    	 
 	    	 
 	    }
 	     return t;
 	 	};
 	 	public static void run(String l) throws InterruptedException {
-	 	String s=	Morse_Encode(l);
+	 	String s = Morse_Encode(l);
 	 	System.out.println(s);
 	 	
  	      
@@ -115,9 +111,7 @@ public class Morse_command {
  					}
  				else 
  		    		 System.out.println("Invalid character");
- 		    }
- 		 	    
- 	     
+ 		    } 
  	    }
 	 	public static void play(String filename)
 	 	{
@@ -135,17 +129,13 @@ public class Morse_command {
 	          
 	         
 	 
-	
-	
-	
-	
 			
 		
 		 public static String Morse_Decode(String s) {
 			 
 			
 		        String[] convert = s.split(" ");
-		        String output="";
+		        String output = "";
 
 		        for (int i = 0; i < convert.length; i++) {
 		           
@@ -231,8 +221,7 @@ public class Morse_command {
 		            case "/":
 		            	output+=" ";
 		            }
-		    }
-		           
+		    }	           
 		        return output;
 	 }
 }
