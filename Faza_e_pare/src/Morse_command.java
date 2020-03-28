@@ -1,5 +1,4 @@
 
-import java.awt.Toolkit;
 import java.io.File;
 import java.io.InputStream;
 import javax.sound.sampled.AudioSystem;
