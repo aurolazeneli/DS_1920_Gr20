@@ -29,7 +29,7 @@ Nëse endodimin e fjalisë së kthyer në morse-code e kthejmë në alfabetin la
 
 Detyra3:Komanda four-square 
 Kjo metodë cipher transformon plaintekstin përmes 4 tabelave 5x5 dhe disa rregullave.
-Secila matrice përmaban shkronjat me dy tabela të cilat  jonë normale, dy të tjera të ndryshuara rregulla e kësaj metode është se kombinohet j dhe I për shkak të matricës 5x5.
+Secila matrice përmaban shkronjat me dy tabela të cilat  jonë normale, dy të tjera të ndryshuara rregulla e kësaj metode është se zevendesohet j ne i për shkak të matricës 5x5 qe gjithsej matrica ka vend per 25 germa, ndersa dime se alfabeti latin ka 26 germa.
 
 Nënkomanda encrypt
 Bëhet përmes ndarëjes dyfishe të shkronjave ku plaintextin tonë e kthen ne cipher kod të kombinuar përmes dy çelësave të cilët ne i përcaktojmë.
